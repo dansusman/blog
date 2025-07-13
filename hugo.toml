@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Dan Susman'
 theme = "dario"
 
+[caches]
+  [caches.images]
+    dir = ":cacheDir/images"
+
 [markup]
   [markup.tableOfContents]
     startLevel = 1
