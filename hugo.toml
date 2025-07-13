@@ -1,0 +1,18 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Dan Susman'
+theme = "dario"
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 4
+    ordered = false
+
+[params]
+  author = "Dan Susman"
+  description = "A description of your site"
+
+  [params.homeInfoParams]
+    Content = "Dan Susman is a Senior Software Engineer at Ginger Labs working on [Notability](https://notability.com/), a leading digital note-taking application used by millions of students and professionals worldwide. He specializes in building scalable, well-tested, cross-platform real-time collaborative note taking applications. He is currently writing a lot of Swift for iOS and macOS. Beyond product development, Dan contributes to the engineering organization through dev tools, AI initiatives, documentation, knowledge sharing, and enhancing developer experience.\n\nDan graduated summa cum laude with highest honors with a Bachelor of Science in Computer Science from Northeastern University."
+    Description = "Dan Susman - Senior Software Engineer at Ginger Labs" # The description of the home page that will be used in the open graph meta tags
