@@ -1,6 +1,6 @@
 # Dan Susman's Blog
 
-A minimal Hugo blog using the [Dario theme](https://github.com/GrantBirki/dario), inspired by Dario Amodei's personal website. This blog is designed to be minimal, performant, and elegant for reading.
+A minimal Hugo blog using the [Dario theme](https://github.com/dansusman/dario), inspired by Dario Amodei's personal website. This blog is designed to be minimal, performant, and elegant for reading.
 
 ## Prerequisites
 
