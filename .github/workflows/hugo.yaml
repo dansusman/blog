@@ -40,6 +40,8 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
         run: sudo snap install dart-sass
+      - name: Install pandoc
+        run: sudo apt-get update && sudo apt-get install -y pandoc
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -54,9 +56,17 @@ jobs:
       - name: Copy uploads to static directory (build-time only)
         run: |
           mkdir -p static/uploads
-          # Copy only the upload files (not README.md or scripts)
-          find uploads-temp -type f \( -name "*.html" -o -name "*.png" -o -name "*.jpg" -o -name "*.gif" -o -name "*.pdf" -o -name "*.webp" -o -name "*.txt" \) -exec cp {} static/uploads/ \;
+          # Copy upload files (including .md files, but excluding README.md)
+          find uploads-temp -type f \( -name "*.html" -o -name "*.png" -o -name "*.jpg" -o -name "*.gif" -o -name "*.pdf" -o -name "*.webp" -o -name "*.txt" -o -name "*.md" \) ! -name "README.md" -exec cp {} static/uploads/ \;
           rm -rf uploads-temp
+      - name: Convert markdown files to HTML
+        run: |
+          # Convert any .md files in static/uploads to .html
+          find static/uploads -name "*.md" -type f | while read -r file; do
+            html_file="${file%.md}.html"
+            pandoc "$file" -o "$html_file"
+            rm "$file"
+          done
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
