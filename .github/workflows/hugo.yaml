@@ -45,6 +45,18 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
+      - name: Checkout private uploads
+        uses: actions/checkout@v4
+        with:
+          repository: dansusman/blog-uploads
+          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+          path: uploads-temp
+      - name: Copy uploads to static directory (build-time only)
+        run: |
+          mkdir -p static/uploads
+          # Copy only the upload files (not README.md or scripts)
+          find uploads-temp -type f \( -name "*.html" -o -name "*.png" -o -name "*.jpg" -o -name "*.gif" -o -name "*.pdf" -o -name "*.webp" -o -name "*.txt" \) -exec cp {} static/uploads/ \;
+          rm -rf uploads-temp
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
