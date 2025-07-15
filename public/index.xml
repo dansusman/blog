@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Dan Susman</title>
-    <link>https://dansusman.github.io/blog/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Dan Susman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Jan 2000 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://dansusman.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>An Example Writing</title>
-      <link>https://dansusman.github.io/blog/posts/my-first-post/</link>
+      <link>http://localhost:1313/posts/my-first-post/</link>
       <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
-      <guid>https://dansusman.github.io/blog/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</description>
     </item>
   </channel>
