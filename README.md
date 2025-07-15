@@ -98,6 +98,42 @@ The Dario theme includes:
 | `hugo new content/posts/post-name.md` | Create new post |
 | `hugo version` | Check Hugo version |
 
+## File Upload System
+
+The blog includes a file upload system that allows you to upload HTML, PNG, or any other files to be accessible at `dansusman.github.io/uploads/filename.ext`.
+
+### Usage
+
+To upload a file:
+
+```bash
+node upload.js /path/to/your/file.png
+```
+
+### What it does:
+- Copies files to `static/uploads/` directory with randomized names
+- Generates a public URL for the uploaded file
+- Supports any file type (HTML, PNG, PDF, etc.)
+- Files are accessible at `https://dansusman.github.io/uploads/[random-id].ext`
+
+### Example:
+
+```bash
+# Upload an image
+node upload.js ~/Downloads/screenshot.png
+
+# Output:
+# File uploaded successfully!
+# Original name: screenshot.png
+# New name: a1b2c3d4.png
+# Public URL: https://dansusman.github.io/uploads/a1b2c3d4.png
+```
+
+### Notes:
+- Files are given random names to prevent conflicts and avoid predictable URLs
+- After uploading, commit and push your changes to deploy the files
+- The upload script requires Node.js to be installed
+
 ## Deployment
 
 The built site in `public/` can be deployed to any static hosting service like Netlify, Vercel, GitHub Pages, or AWS S3.
