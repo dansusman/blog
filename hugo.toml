@@ -12,6 +12,9 @@ theme = "dario"
     startLevel = 1
     endLevel = 4
     ordered = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
 
 [params]
   author = "Dan Susman"

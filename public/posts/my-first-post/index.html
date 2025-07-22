@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>An Example Writing</title>
@@ -9,8 +9,6 @@
 
 
 
-
-  
 
 
 
@@ -34,23 +32,26 @@
 
 <meta property="og:title" content="Cool New Example Post" />
 <meta property="og:description" content="An example of using the Dario hugo theme" />
-<meta property="og:image" content="https://dansusman.github.io/posts/example/og.png" />
+<meta property="og:image" content="http://localhost:1313/posts/example/og.png" />
 <meta property="og:image:type" content='image/png' />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://dansusman.github.io/posts/my-first-post/" />
+<meta property="og:url" content="http://localhost:1313/posts/my-first-post/" />
 
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Cool New Example Post" />
 <meta name="twitter:description" content="An example of using the Dario hugo theme" />
-<meta name="twitter:image" content="https://dansusman.github.io/posts/example/og.png" />
+<meta name="twitter:image" content="http://localhost:1313/posts/example/og.png" />
 <meta name="author" content="Dan Susman" />
     <meta name="description" content="A description of your site" />
 
-    <link rel="preload" href="/fonts/Newsreader.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/Newsreader-italic.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Intel+One+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/css/styles.css" />
 
@@ -61,15 +62,17 @@
     <script src="/js/darkmode.js" defer></script>
     <script src="/js/footnotes.js" defer></script>
     <script src="/js/toc-highlight.js" defer></script>
+    <script src="/js/margin-notes.js" defer></script>
+    <script src="/js/auto-margin-notes.js" defer></script>
 </head>
 
 
-<body>
+<body class="has-toc">
 
     <header>
     <div>
         <h1>
-            <a href="https://dansusman.github.io/">Dan Susman</a>
+            <a href="http://localhost:1313/">Dan Susman</a>
         </h1>
         <div class="header-controls">
             <div class="toggle-switch">
@@ -180,7 +183,19 @@
 
     <footer>
     <div class="footer-content">
-        <p>&copy; 2025 - Dan Susman</p>
+        <div>
+            &copy; 2025 - Dan Susman
+            
+            <span class="fix-typo-separator">•</span>
+            <a href="https://github.com/dansusman/dansusman.github.io/edit/main/content/posts/my-first-post.md" target="_blank" rel="noopener">Fix typo</a>
+            
+        </div>
+        <div class="disclaimer">
+            All words are my opinions, written by me.
+        </div>
+        <div class="build-timestamp">
+            Last build on: July 21, 2025 at 9:00 PM EDT
+        </div>
     </div>
 </footer>
 
