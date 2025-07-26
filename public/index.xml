@@ -6,28 +6,6 @@
     <description>Recent content on Dan Susman</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2024 10:00:00 +0000</lastBuildDate>
     <atom:link href="https://dansusman.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to Use Git Bisect</title>
-      <link>https://dansusman.github.io/posts/git-bisect-debugging/</link>
-      <pubDate>Sat, 20 Jan 2024 10:00:00 +0000</pubDate>
-      <guid>https://dansusman.github.io/posts/git-bisect-debugging/</guid>
-      <description>Git bisect is a powerful tool for finding the exact commit that introduced a bug by performing a binary search through your commit history.</description>
-    </item>
-    <item>
-      <title>How to Write Good Prompts: Using Spaced Repetition to Create Understanding</title>
-      <link>https://dansusman.github.io/posts/writing-good-prompts-spaced-repetition/</link>
-      <pubDate>Mon, 15 Jan 2024 10:00:00 +0000</pubDate>
-      <guid>https://dansusman.github.io/posts/writing-good-prompts-spaced-repetition/</guid>
-      <description>Learn the principles of writing effective spaced repetition prompts that produce consistent answers, require genuine effort, and break down complex knowledge into learnable components. This guide covers the cognitive science behind effective retrieval practice and practical techniques for creating prompts that stick.</description>
-    </item>
-    <item>
-      <title>An Example Writing</title>
-      <link>https://dansusman.github.io/posts/my-first-post/</link>
-      <pubDate>Sat, 01 Jan 2000 00:00:00 +0000</pubDate>
-      <guid>https://dansusman.github.io/posts/my-first-post/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</description>
-    </item>
   </channel>
 </rss>
